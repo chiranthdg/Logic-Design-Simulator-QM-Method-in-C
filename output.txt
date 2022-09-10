@@ -1,0 +1,84 @@
+
+Enter the number of variables used
+4
+
+Enter the number of minterms (i.e values in decimal whose o/p is 1)
+6
+
+Enter the decimal values of minterms
+
+1
+5
+6
+7
+9
+13
+
+
+Column #1
+
+
+1       0001
+5       0101
+6       0110
+9       1001
+7       0111
+13      1101
+
+
+Column #2
+
+
+1,5     0-01
+1,9     -001
+5,7     01-1
+5,13    -101
+6,7     011-
+9,13    1-01
+
+
+Column #3
+
+
+1,5,9,13        --01
+1,9,5,13        --01
+
+
+Column #4
+
+
+No pairs formed hence no further calculation required
+
+
+
+The prime implicants are:- 
+
+01-1            5,7 
+
+011-            6,7 
+
+--01            1,5,9,13 
+
+
+
+                        Prime Implicants Table
+
+
+ 1      5       6       7       9       13
+
+ -      X       -       X       -       -       5,7 
+
+ -      -       X       X       -       -       6,7 
+
+ X      X       -       -       X       X       1,5,9,13 
+
+
+
+
+
+The minimized function is :- BCd + Ab
+
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.
